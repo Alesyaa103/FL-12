@@ -18,12 +18,12 @@
             <hr>
           <nav>
             <a href=""><b>Home</b></a>
-            <a href=""><b>Headings</b></a>
-            <a href=""><b>Text formats</b></a>
-            <a href=""><b>Types of lists</b></a>
-            <a href=""><b>Table</b></a>
-            <a href=""><b>Blockquotes</b></a>
-            <a href=""><b>Registration</b></a>
+            <a href="#heading"><b>Headings</b></a>
+            <a href="#textFormat"><b>Text formats</b></a>
+            <a href="#typeList"><b>Types of lists</b></a>
+            <a href="#table"><b>Table</b></a>
+            <a href="#blockquote"><b>Blockquotes</b></a>
+            <a href="#registration"><b>Registration</b></a>
           </nav>
           <hr>
           </header>
@@ -58,7 +58,7 @@
               <mark>Let’s make that 6pm.</mark>
               This <del>text</del> has been struck.</p>
             <hr>
-            <p>h1 defines the most important heading. h6 defines the least important heading. Font-size for h1 is the
+            <p id="heading">h1 defines the most important heading. h6 defines the least important heading. Font-size for h1 is the
               same as font-size for h2, because we have to use only one h1 on the page, and it is commonly used inside
               header</p>
             <h2>Heading 2</h2>
@@ -67,7 +67,7 @@
             <h5>Heading 5</h5>
             <h6>Heading 6</h6>
             <hr>
-            <h2>Text formats</h2>
+            <h2 id="textFormat">Text formats</h2>
             <h3>Article</h3>
             <article>
               <h2>Article title</h2>
@@ -92,7 +92,7 @@ both      <b>spaces</b> and
 }
 </code>
             </pre>
-            <h2>Unordered Wish List</h2>
+            <h2 id="typeList">Unordered Wish List</h2>
             <ul>
               <li>Iphone 11 pro max</li>
               <li>Books:
@@ -134,7 +134,7 @@ both      <b>spaces</b> and
             </label>
             <hr>
             <hr>
-            <h2>Table</h2>
+            <h2 id="table">Table</h2>
             <table>
               <tr>
                 <th>Skill</th>
@@ -162,7 +162,7 @@ both      <b>spaces</b> and
                 <td>Dnipro</td>
               </tr>
             </table>
-            <h2>Blockquotes</h2>
+            <h2 id="blockquote">Blockquotes</h2>
             <p>Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
             <blockquote>
               "So if you want to go fast, if you want to get done quickly, if you want your code to be easy to write, make it easy to read."
@@ -170,7 +170,7 @@ both      <b>spaces</b> and
               <a href="">Robert C. Martin (Uncle Bob)</a>
             </blockquote>
             <hr>
-            <form method="POST">
+            <form method="POST" id="registration">
               <div><label for="username">Username:<input type="text" id="username" name="username"></label></div>
               <div><label for="email">Email:<input type="text" id="email" name="email"></label></div>
               <div><label for="pass">Password:<input type="text" id="pass" name="pass"></label></div>
