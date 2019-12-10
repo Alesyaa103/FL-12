@@ -3,7 +3,6 @@
   .tm-team-description-container {
     max-width: 100%;
   }
-
   .tm-main-content h2.tm-section-title {
     text-align: center;
     text-transform: uppercase;
@@ -30,9 +29,14 @@
     display: none;
   }
 
+  .tm-content-box > .tm-banner > .tm-banner-inner > img{
+    display: block;
+  }
+
   .padding-medium,
   #tmCarousel,
-  .tm-main-content {
+  .tm-main-content,
+  .tm-banner {
     padding: 0
   }
 
@@ -40,7 +44,7 @@
   #tmCarousel,
   section#blocks,
   footer {
-    margin-top: 20px;
+    margin-top: 18px;
   }
 
   section.tm-content-box>div.padding-medium>ol {
