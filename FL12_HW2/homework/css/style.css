@@ -43,10 +43,16 @@
   section.heading .padding-medium,
   #tmCarousel,
   section#blocks,
-  footer {
+  footer,
+  .blocks,
+  section:first-of-type {
     margin-top: 18px;
   }
 
+  h2 {
+		font-weight: 300;
+  }
+  
   section.tm-content-box>div.padding-medium>ol {
     list-style-type: none;
     width: 50%;
