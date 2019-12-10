@@ -3,7 +3,7 @@
   .tm-team-description-container {
     max-width: 100%;
   }
-  .tm-main-content h2.tm-section-title {
+  .tm-main-content h2.tm-section-title, .tm-team-description-container p.tm-section-description {
     text-align: center;
     text-transform: uppercase;
   }
@@ -11,10 +11,6 @@
   .tm-main-content,
   .tm-content-box {
     margin-bottom: 0;
-  }
-
-  .tm-team-description-container p.tm-section-description {
-    text-align: center;
   }
 
   .tm-team-img,
