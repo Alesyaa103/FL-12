@@ -1,0 +1,249 @@
+@mixin btn {
+  color: $colorAdd;
+  background-color: $colorBtn;
+  font: bold 13px/1 $fontMain;
+  outline: none;
+  border: none;
+  width: 100px;
+  height: 33px;
+  border-radius: 3px;
+  letter-spacing: -0.4px;
+}
+
+@mixin a {
+  color: $colorAdd;
+  font: 600 14px/1 $fontMain;
+}
+
+body {
+  margin: 0;
+  background-color: map-get($bg-colores, "main");;
+}
+
+button {
+  @include btn;
+}
+
+a {
+  @include a;
+}
+
+.header {
+  background: no-repeat url($imageBg) 1% 50%;
+  padding: 11px 135px 123px;
+  background-size: 100%;
+  border-bottom-right-radius: 40%;
+
+  &-wrap {
+    width: 652px;
+
+    a {
+      margin-left: 103px;
+    }
+  }
+
+  &_heading {
+    font: 1000 49px/1 $fontMain;
+    color: $colorContent;
+    margin: 49px 0 25px 0;
+    letter-spacing: 0.9px;
+    width: 342px;
+    line-height: 51px;
+    position: relative;
+    z-index: 0;
+    &::before {
+      content: '';
+      display: block;
+      width: 213px;
+      height: 36px;
+      background-color: $colorElem;
+      position: absolute;
+      bottom: 0px;
+      z-index: -1;
+    }
+  }
+
+  &_text {
+    color: $colorContent;
+    font: 400 11px/1.5 $fontHead;
+    white-space: pre-line;
+    letter-spacing: 0.3px;
+    margin-bottom: 42px;
+    line-height: 17px;
+  }
+
+}
+
+.landing-logo {
+  display: flex;
+  align-items: center;
+
+  p {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px 3px 9px;
+    color: $colorContent;
+    font: 600 17px/1 $fontHead;
+
+  }
+
+  span {
+    text-align: center;
+    font-size: 7px;
+    margin-top: 4px;
+  }
+
+  img {
+    @extend .logoImg;
+  }
+}
+.logoImg {
+  width: 32px;
+  height: 32px;
+}
+.section {
+  margin: 0 auto;
+  margin-bottom: 149px;
+  width: 58%;
+  position: relative;
+  text-align: center;
+  &_link {
+    font-size: 11px;
+    color: #A1A2A0;
+  }
+  &_text {
+    color: $colorContent;
+    font: 600 28px/1.2 $fontMain;
+    letter-spacing: 0.7px;
+    position: relative;
+    display: inline-block;
+    margin: 28px auto 11px;
+    z-index: 0;
+    &::after {
+      content: '';
+      display: block;
+      width: 133px;
+      height: 35px;
+      background-color: $colorElem;
+      position: absolute;
+      bottom: 4px;
+      right: 8px;
+      z-index: -1;
+    }
+  }
+  &_banner {
+    position: absolute;
+    bottom: -200px;
+    background: linear-gradient(45deg, $colorBtn, $colorGrad);
+    border-radius: 5px;
+    width: 108%;
+    right: -4%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &_heading {
+      font: bold 22px/1.2 $fontMain;
+      color: $colorContent;
+      margin: 20px 0px 11px;
+      word-spacing: -1px;
+      letter-spacing: -0.3px;
+      position: relative;
+      z-index: 0;
+      &::after {
+        content: '';
+        display: block;
+        width: 46px;
+        height: 35px;
+        background-color: $colorElem;
+        position: absolute;
+        bottom: 2px;
+        left: 85px;
+        z-index: -1;
+      }
+    }
+    &_text {
+      color: $colorFooter;
+      font: 600 12px/1.2 $fontHead;
+      margin-bottom:30px;
+      letter-spacing: -0.5px;
+    }
+    &_text_wrap {
+      text-align: left;
+    }
+  }
+  &_card {
+    display: flex;
+    background-color: map-get($bg-colores, "add");
+    padding: 0 14px;
+    margin: 17px 0;
+    border-radius: 4px;
+    height: 230px;
+    align-items: center;
+    &:nth-child(2) {
+      height: 222px;
+    }
+    &:nth-child(3) {
+      height: 241px;
+    }
+    img {
+      width: 303px;
+      border-radius: 4px;
+      margin: 14px 0;
+      height: 202px;
+    }
+    img[src="img/m-2.jpg"] {
+      width: 293px;
+      height: 194px;
+    }
+    img[src="img/m-3.jpg"] {
+      width: 323px;
+      height: 214px;
+    }
+    &_heading {
+      font: 600 16px/1.5 $fontMain;
+      letter-spacing: 0.5px;
+      color: $colorAdd;
+    }
+    &_text {
+      width: 316px;
+      font: 600 11px/1.6 $fontHead;
+      color: $colorAdd;
+      text-align: justify;
+      color: #A1A2A0;
+    }
+    &_right_container{
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+.footer {
+  background-color: map-get($bg-colores, "add");;
+  &-wrap {
+    display: flex;
+    align-items: center;
+    height: 170px;
+    justify-content: space-between;
+    padding: 26px 135px 0px;
+  }
+  &_logo {
+    p {
+      color: $colorFooter;
+    }
+  }
+  &_text {
+    width: 212px;
+    font: 600 10px/1.4 $fontMain;
+    color: $colorFooter;
+    letter-spacing: -0.2px;
+    word-spacing: 0.2px;
+  }
+  &-cr{
+    color: $colorFooter;
+    font: 600 11px/1.6 $fontHead;
+    letter-spacing: -0.1px;
+  }
+}
