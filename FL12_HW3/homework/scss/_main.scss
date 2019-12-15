@@ -17,7 +17,8 @@
 
 body {
   margin: 0;
-  background-color: map-get($bg-colores, "main");;
+  background-color: map-get($bg-colores, "main");
+  ;
 }
 
 button {
@@ -51,6 +52,7 @@ a {
     line-height: 51px;
     position: relative;
     z-index: 0;
+
     &::before {
       content: '';
       display: block;
@@ -97,20 +99,24 @@ a {
     @extend .logoImg;
   }
 }
+
 .logoImg {
   width: 32px;
   height: 32px;
 }
+
 .section {
   margin: 0 auto;
   margin-bottom: 149px;
   width: 58%;
   position: relative;
   text-align: center;
+
   &_link {
     font-size: 11px;
     color: #A1A2A0;
   }
+
   &_text {
     color: $colorContent;
     font: 600 28px/1.2 $fontMain;
@@ -119,6 +125,7 @@ a {
     display: inline-block;
     margin: 28px auto 11px;
     z-index: 0;
+
     &::after {
       content: '';
       display: block;
@@ -131,6 +138,7 @@ a {
       z-index: -1;
     }
   }
+
   &_banner {
     position: absolute;
     bottom: -200px;
@@ -141,6 +149,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     &_heading {
       font: bold 22px/1.2 $fontMain;
       color: $colorContent;
@@ -149,6 +158,7 @@ a {
       letter-spacing: -0.3px;
       position: relative;
       z-index: 0;
+
       &::after {
         content: '';
         display: block;
@@ -161,16 +171,19 @@ a {
         z-index: -1;
       }
     }
+
     &_text {
       color: $colorFooter;
       font: 600 12px/1.2 $fontHead;
-      margin-bottom:30px;
+      margin-bottom: 30px;
       letter-spacing: -0.5px;
     }
+
     &_text_wrap {
       text-align: left;
     }
   }
+
   &_card {
     display: flex;
     background-color: map-get($bg-colores, "add");
@@ -179,31 +192,38 @@ a {
     border-radius: 4px;
     height: 230px;
     align-items: center;
+
     &:nth-child(2) {
       height: 222px;
     }
+
     &:nth-child(3) {
       height: 241px;
     }
+
     img {
       width: 303px;
       border-radius: 4px;
       margin: 14px 0;
       height: 202px;
     }
+
     img[src="img/m-2.jpg"] {
       width: 293px;
       height: 194px;
     }
+
     img[src="img/m-3.jpg"] {
       width: 323px;
       height: 214px;
     }
+
     &_heading {
       font: 600 16px/1.5 $fontMain;
       letter-spacing: 0.5px;
       color: $colorAdd;
     }
+
     &_text {
       width: 316px;
       font: 600 11px/1.6 $fontHead;
@@ -211,7 +231,8 @@ a {
       text-align: justify;
       color: #A1A2A0;
     }
-    &_right_container{
+
+    &_right_container {
       margin: 0 auto;
       height: 100%;
       display: flex;
@@ -220,8 +241,11 @@ a {
     }
   }
 }
+
 .footer {
-  background-color: map-get($bg-colores, "add");;
+  background-color: map-get($bg-colores, "add");
+  ;
+
   &-wrap {
     display: flex;
     align-items: center;
@@ -229,11 +253,13 @@ a {
     justify-content: space-between;
     padding: 26px 135px 0px;
   }
+
   &_logo {
     p {
       color: $colorFooter;
     }
   }
+
   &_text {
     width: 212px;
     font: 600 10px/1.4 $fontMain;
@@ -241,7 +267,8 @@ a {
     letter-spacing: -0.2px;
     word-spacing: 0.2px;
   }
-  &-cr{
+
+  &-cr {
     color: $colorFooter;
     font: 600 11px/1.6 $fontHead;
     letter-spacing: -0.1px;
