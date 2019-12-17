@@ -41,19 +41,20 @@ body {
   font-size: 16px;
 }
 
-li:first-child>a {
+.nav__menu--item:hover {
   color: #bfba55;
 }
 
 .header {
   width: 100%;
-
+  margin-top: 73px;
   height: 114vh;
   background: linear-gradient(to right, #000 0%, transparent 50%, #000 100%), no-repeat url(../img/home-bg.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
   padding-top: 26%;
+  background-attachment: fixed;
 }
 
 
