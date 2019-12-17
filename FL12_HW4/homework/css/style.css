@@ -168,7 +168,7 @@ body {
   width: 40%;
 }
 
-.footer__container p {
+.footer__container--text {
   color: #777;
   font-size: 14px;
   margin: 18px 0;
