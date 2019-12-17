@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: auto;
+}
+
+.nav {
+  height: 73px;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  padding: 0 14%;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.nav__text {
+  font-size: 18px;
+  word-spacing: 3px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.nav__menu {
+  display: flex;
+  width: 32%;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav__menu--item {
+  text-decoration: none;
+  color: #777;
+  font-size: 16px;
+}
+
+li:first-child>a {
+  color: #bfba55;
+}
+
+.header {
+  width: 100%;
+  height: 114vh;
+  background: linear-gradient(to right, #000 0%, transparent 50%, #000 100%), no-repeat url(../img/home-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 26%;
+}
+
+
+.header__title {
+  font-size: 58px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.header__subtitle {
+  color: #bfba55;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  color: #777;
+  text-decoration: none;
+  background-color: #fff;
+  outline: none;
+  border-radius: 30px;
+  border: 1px solid #777;
+  padding: 15px 0;
+}
+
+.header__button {
+  width: 130px;
+  text-align: center;
+  margin: 0 auto;
+  height: 40px;
+  font-size: 10px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.main {
+  width: 100%;
+  padding: 50px 20%;
+}
+
+.article {
+  border-bottom: 1px solid #777;
+  margin-top: 15px;
+}
+
+.article:last-child {
+  border: none;
+}
+
+.article__img {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.article__button {
+  width: 160px;
+  text-align: center;
+  margin: 30px 8px 50px;
+  display: block;
+  font-size: 14px;
+}
+
+.article__title {
+  color: #000;
+  font-size: 27px;
+}
+
+.article__info {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 16px;
+}
+
+.article__info--text {
+  color: #777;
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+.article__info--img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.article__content {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.footer {
+  height: 40vh;
+  background-color: #000;
+  padding: 12vh 20% 0 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__container--title {
+  color: #fff;
+  font-size: 25px;
+}
+
+.footer__container {
+  width: 50%;
+}
+
+.footer__container:last-child {
+  width: 40%;
+}
+
+.footer__container p {
+  color: #777;
+  font-size: 14px;
+  margin: 18px 0;
+  line-height: 1.5;
+}
