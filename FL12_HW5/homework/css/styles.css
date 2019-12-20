@@ -273,7 +273,7 @@ body {
     width: 50%;
   }
 
-  .block__title {
+  .block__title, .news__title {
     font-size: 2vw;
   }
 
@@ -281,7 +281,7 @@ body {
     width: 50%;
   }
 
-  .block__text {
+  .block__text, .news__text{
     font-size: 1vw;
     ;
   }
