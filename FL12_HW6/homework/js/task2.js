@@ -11,7 +11,7 @@ if ( a > 0 && b > 0 && c > 0) {
   } else {
     alert('Scalene triangle');
   }
-} else if (a === 0 || b === 0 || c === 0) {
+} else if (a <= 0 || b <= 0 || c <= 0) {
   alert('A triangle must have 3 sides with a positive definite length');
 } else {
   alert('input values should be ONLY numbers');
