@@ -21,14 +21,10 @@ const Fighter = function (obj) {
     logCombatHistory: function () {
       return `name: ${user.name} wins: ${wins} losses: ${losses}`
     },
-    decreaseHp: function (val) {
-      user.hp -= val;
-      return user.hp;
-    },
     attack: function (Fighter) {
       console.log(user.hp, Fighter.getHp())
       if (100 - Fighter.getAgility() - Fighter.getStrength() >= Math.floor(Math.random() * 100)) {
-        Fighter.decreaseHp(user.damage);
+        Fighter.dealDamage(Fighter.getDamage());
         console.log(`${user.name} makes ${Fighter.getDamage()} damage to ${Fighter.getName()}`);
       } else {
         console.log(`${user.name} attack missed`);
@@ -36,9 +32,11 @@ const Fighter = function (obj) {
     },
     heal: function (val) {
       user.hp + val <= 100 ? user.hp = user.hp + val : user.hp = 100;
+      return user.hp
     },
     dealDamage: function (val) {
       user.hp - val > 0 ? user.hp = user.hp - val : user.hp = 0;
+      return user.hp
     },
     addWin: function () {
       wins++;
@@ -85,3 +83,5 @@ const myFighter2 = new Fighter({
   strength: 25,
   agility: 30
 });
+
+console.log(battle(myFighter, myFighter2))
