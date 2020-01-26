@@ -1,0 +1,23 @@
+.recrut {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+ul {
+  width: 500px;
+}
+
+ul>li {
+  width: 100%;
+  list-style-type: none;
+}
+
+.recrut:hover {
+  background-color: #EFEFEF;
+}
+
+p {
+  margin: 0;
+  margin-left: 8px;
+}
