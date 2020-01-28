@@ -9,20 +9,63 @@ header {
   background-color: #4257b2;
   height: 8%;
   width: 100%;
-  /* padding-left: 90%; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  min-height: 60px;
 }
 
-.button {
+a,
+input,
+span {
   padding: 10px 40px;
-  margin-right: 30px;
+  margin: 10px 30px;
   text-decoration: none;
   background-color: inherit;
   border: 1px solid #31428d;
   border-radius: 10px;
   font-size: 16px;
+  outline: none;
   color: #232e5e;
-  
+  align-self: center;
+}
+
+input[type=button] {
+  width: 180px;
+}
+
+input {
+  margin: 10px 0;
+  width: 500px;
+}
+
+input[name=term]{
+  background-color: #232e5e;
+  color: #fff;
+}
+section {
+  margin: 4% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[name=name] {
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+section>div>div,
+section>div {
+  display: flex;
+  flex-direction: column;
+}
+
+.inWork {
+  background-color: #4257b2;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
