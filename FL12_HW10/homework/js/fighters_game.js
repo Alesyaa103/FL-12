@@ -1,5 +1,4 @@
-const Fighter = function (obj) {
-  let user = obj;
+const Fighter = function (user) {
   let wins = 0;
   let losses = 0;
   return {
@@ -22,7 +21,6 @@ const Fighter = function (obj) {
       return `name: ${user.name} wins: ${wins} losses: ${losses}`
     },
     attack: function (Fighter) {
-      console.log(user.hp, Fighter.getHp())
       if (100 - Fighter.getAgility() - Fighter.getStrength() >= Math.floor(Math.random() * 100)) {
         Fighter.dealDamage(Fighter.getDamage());
         console.log(`${user.name} makes ${Fighter.getDamage()} damage to ${Fighter.getName()}`);
